@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  /* background: linear-gradient(
+    #0d1e4c,
+    #c48cb3,
+    #e5c9d7,
+    #83a6ce,
+    #4371a3,
+    #8dbaf9
+  ); */
+  background:pink ;
   color: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+.desktop-menu {
+  display: flex;
+  margin: 1rem;
+  cursor: pointer;
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items {
+  color: white;
+  justify-content: space-between;
+  margin-left: 2rem;
+  font-weight: bold;
+  border-bottom: none;
+  font-family: cursive;
 }
+.items:hover {
+  padding-bottom: 0.5rem;
+  color: yellow;
+}
+
+.Navbar {
+  height: 5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin-left: 3rem;
+}
+
+#intro {
+  height: 50%;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+
+}
+.introContent {
+  margin-top: 7rem;
+  height: 100vh;
+  width: 100vh;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introName {
+  color: white;
+  font-family: cursive;
+}
+
+.introName2 {
+  margin-right: 15rem;
+  color: yellow;
+  transition: all ease 0.3s;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.introParagh {
+  font-size: small;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.skillTitle {
+  font-weight: bold;
+  margin-left: 30rem;
+  color: rgb(58, 161, 245);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.body {
+  color: black;
+}
+
+.item {
+  margin-left: 10rem;
+  width: 70%;
+}
+
+
+
+
+
+.shalu {
+  height: 400px;
+  width: 300px;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  object-fit: cover;
+  transition: all ease 0.3s;
+  filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));
+}
+
+.skillImg {
+  height: 60px;
+  width: 72px;
+  margin: auto;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  /* transition: all ease 0.3s; */
+
+}
+.skillImg:hover {
+   box-shadow: skyblue; 
+  height: 75px;
+  width: 80px;
+  transition: 1s;
+
+}
+
+
+.projectImg{
+  height: 20px;
+  width: 30px;
+  border-radius: 20px;
+}
+
