@@ -30,7 +30,7 @@ body {
   margin-left: 2rem;
   font-weight: bold;
   border-bottom: none;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 .items:hover {
   padding-bottom: 0.5rem;
@@ -76,7 +76,7 @@ body {
 }
 .introName {
   color: white;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 
 .introName2 {
@@ -84,7 +84,7 @@ body {
   color: yellow;
   transition: all ease 0.3s;
   font-weight: bold;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 
 .introParagh {
