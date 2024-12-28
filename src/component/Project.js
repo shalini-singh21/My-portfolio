@@ -40,7 +40,7 @@ function Projects() {
                     it helps to calculate the number of words and characters ,
                     convert in upper case lower case you can preview your typed text in the text area very helpful text calculator.
                 </Accordion.Body>
-            </Accordion.Item>  nklj
+            </Accordion.Item>  
 
 
 

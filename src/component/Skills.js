@@ -5,7 +5,6 @@ function Skills () {
     return (
 
         <>
-          
                 <h1><span className="skillTitle" >IT Skills</span></h1>
                 <img src={skill3} className=" skillImg" />
                 <img src={skill2} className=" skillImg" />
