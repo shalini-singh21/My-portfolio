@@ -1,23 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  background: transparent;
-}
 
 body {
-
-  background:black ;
-  color: white;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-@media only screen and (max-width: 600px){
-  body{
-    background-color: black;
-  }
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+background:linear-gradient(#063250,#08436A,#0B598D,#1593E6,rgb(190, 190, 231));
+color: white;
+overflow: hidden;
+overflow-y: scroll;
 }
 
 .desktop-menu {
@@ -26,20 +16,27 @@ body {
   cursor: pointer;
   justify-items: center;
   justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 30rem;
   align-items: center;
+  list-style: none;
+  gap: 47px;
+}
+
+.desktop-menu a{
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: none;
 }
 
 .items {
   width: 200%;
- 
-  color: white;
   justify-content: space-between;
   margin-left: 2rem;
   font-weight: bold;
   border-bottom: none;
-  /* font-family: cursive; */
+
 }
+
 .items:hover {
   padding-bottom: 0.5rem;
   color: yellow;
@@ -59,16 +56,15 @@ body {
   width: 100vw;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: 3rem;
-
 }
 .introContent {
   margin-top: 7rem;
   height: 100vh;
   width: 100vh;
-  padding: 2rem;
-  font-size: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   flex-direction: column;
   justify-content: center;
@@ -79,18 +75,10 @@ body {
 }
 .introName {
   color: white;
-  /* font-family: cursive; */
+  
 }
 
-.introName2 {
-  width: 100%;
-  height: 20px;
-  margin-right: 15rem;
-  color: yellow;
-  transition: all ease 0.3s;
-  font-weight: bold;
-  /* font-family: cursive; */
-}
+
 
 .introParagh {
   font-size: small;
@@ -107,11 +95,10 @@ body {
   cursor: pointer;
 }
 
-.body {
-  color: black;
-}
+
 
 .item {
+  color: black;
   margin-left: 10rem;
   width: 70%;
 }
@@ -122,17 +109,44 @@ body {
 
 .shalu {
   height: 400px;
-  width: 300px;
-  margin-right: 3rem;
+  width: 500px;
   margin-top: 3rem;
-  border-radius: 50px;
+  border-radius: 1200%;
   position: absolute;
   z-index: -1;
   right: 0;
-  object-fit: cover;
+  object-fit:scale-down;
   transition: all ease 0.3s;
-  filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));
+  filter: drop-shadow(5px 5px 5px yellow);
+/* z-index: 1; */
+animation-name: floating;
+animation-duration: 5s;
+animation-iteration-count:infinite ;
+animation-timing-function:ease-in-out ;
+
+
+
 }
+.introName2{
+  color: yellow;
+ 
+ 
+}
+
+@keyframes floating {
+  0%{
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,30px);
+  }
+  100%{
+    transform: translate(0,-1px);
+  }
+}
+
+
+
 
 .skillImg {
   height: 60px;
@@ -153,11 +167,75 @@ body {
 }
 
 
+
+
 .projectImg{
   height: 20px;
   width: 30px;
   border-radius: 20px;
 }
+.Accordion{
+
+  margin-top:100px ;
+}
 
 
 
+
+@media screen  and (max-width:600px){
+  .Navbar{
+    flex-direction: column;
+    align-items:flex-start ;
+    height: 5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    top: 0;
+    /* margin-left: 3rem; */
+  }
+  menu{
+    position: absolute;
+    right: 0;
+    margin:10% ;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .desktop-menu {
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+    justify-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    align-items: center;
+    list-style: none;
+    gap: 47px;
+  
+  }
+  
+  .desktop-menu a{
+    font-size: 25px;
+  
+    text-decoration: none;
+  }
+ 
+ 
+
+
+  }
+
+.contactBtn{
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600px;
+  padding: 17px 26px;
+  box-shadow: 0 ,0, 4px 0 red;
+}

@@ -7,17 +7,27 @@ const Navbar = () => {
 
 
         <>
-            <div className="Navbar">
+            <nav className="Navbar">
 
-                <h1 className="introName2">Shalini singh</h1>
+                <h1 className="introName2">Portfolio</h1>
+                <div className="menu"> 
+                    < ol className="desktop-menu">
+                        <li>
+                            <a activeClass="active" href="/Home" spy={true} smooth={true} offset={-100} duration={500} className="items">Home </a>
 
-                < div className="desktop-menu">
-                    <a activeClass="active" href="/Home" spy={true} smooth={true} offset={-100} duration={500} className="items">Home </a>
-                    <a activeClass="active" href="/skills" spy={true} smooth={true} offset={-50} duration={500} className="items">Skills</a>
-                    <a activeClass="active" href="/projects" spy={true} smooth={true} offset={-50} duration={500} className="items">Projects</a>
+                        </li>
+                        <li>
+                            <a activeClass="active" href="/skills" spy={true} smooth={true} offset={-50} duration={500} className="items">Skills</a>
+                        </li>
+
+
+                        <li>
+                            <a activeClass="active" href="/projects" spy={true} smooth={true} offset={-50} duration={500} className="items">Projects</a>
+                        </li>
+
+                    </ol>
                 </div>
-
-            </div>
+            </nav>
         </>
     )
 }

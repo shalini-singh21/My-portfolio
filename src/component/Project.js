@@ -2,13 +2,17 @@ import React from "react";
 import { Accordion } from "react-bootstrap"
 import myntra2 from"../Image/myntra2.jpg"
 import todo from "../Image/todo.png"
+import amazon from"../Image/amazon.png"
+import text from "../Image/text.png"
+import port from"../Image/port.png"
+import toe from"../Image/toe.png"
 function Projects() {
     return (
 
         <Accordion className="Accordion">
 
             <Accordion.Item eventKey="1" className="item">
-                <Accordion.Header className="heading-acc"> <strong><span>Tic-Tac-Toe </span> </strong> </Accordion.Header>
+                <Accordion.Header className="heading-acc">  <img src={toe} className="projectImg" /><strong><span>Tic-Tac-Toe </span> </strong> </Accordion.Header>
                 <Accordion.Body className="body">
                     <strong> Description: </strong> created a Tic Tac Toe responsive web page game by using  <srong> HTML, CSS  and JavaScript </srong>with some images ,
                     used some awesome icons for giving beautiful layout to looks attractive.
@@ -25,7 +29,7 @@ function Projects() {
             </Accordion.Item>
 
             <Accordion.Item eventKey="3" className="item">
-                <Accordion.Header className="heading-acc"> <strong><span>Porfolio </span> </strong></Accordion.Header>
+                <Accordion.Header className="heading-acc"> <img src={port} className="projectImg" /> <strong><span>Porfolio </span> </strong></Accordion.Header>
                 <Accordion.Body className="body">
                     <strong>  Description:</strong> Created a portfolio website by using  <strong> React JS </strong>. Explore my interactive portfolio
                     I have added animations and transition by using CSS and react Scroll.
@@ -34,7 +38,7 @@ function Projects() {
             </Accordion.Item>
 
             <Accordion.Item eventKey="4" className="item">
-                <Accordion.Header className="heading-acc"><strong><span> Text Editor  </span> </strong></Accordion.Header>
+                <Accordion.Header className="heading-acc">   <img src={text} className="projectImg" /><strong><span> Text Editor  </span> </strong></Accordion.Header>
                 <Accordion.Body className="body">
                     <strong>  Description:</strong> I have created a text calculator by using  <strong> React JS </strong>React JS and added some <strong> bootstrap </strong> styling,
                     it helps to calculate the number of words and characters ,
@@ -54,7 +58,7 @@ function Projects() {
 
 
             <Accordion.Item eventKey="6" className="item">
-                <Accordion.Header className="heading-acc"><strong><span>Amazon clone</span> </strong></Accordion.Header>
+                <Accordion.Header className="heading-acc"> <img src={amazon} className="projectImg" />   <strong><span>Amazon clone</span> </strong></Accordion.Header>
                 <Accordion.Body className="body">
                     <strong>  Description:</strong>created an amazon Clone webpage by using <strong>HTML , CSS , JavaScript.</strong>
                 </Accordion.Body>
@@ -62,13 +66,6 @@ function Projects() {
 
            
 
-            <Accordion.Item eventKey="7" className="item">
-                <Accordion.Header className="heading-acc"><strong><span> Login form</span> </strong></Accordion.Header>
-                <Accordion.Body className="body">
-                    <strong>  Description:</strong>Created a login form it is responsive webpage button by using HTML,
-                    CSS , JavaScript   .
-                </Accordion.Body>
-            </Accordion.Item>
 
 
         </Accordion>
