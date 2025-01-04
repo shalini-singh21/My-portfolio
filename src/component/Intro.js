@@ -19,9 +19,9 @@ const Intro = () => {
                     <a className="contactBtn" href=" mailto:shalu.singh1304@gmail.com"  >contact me</a>
                 </div>
                 <img src={shalu} alt="shalu" className="shalu" />
-
+       
             </section>
-
+         
 
           
 
