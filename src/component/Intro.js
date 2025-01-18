@@ -7,7 +7,7 @@ const Intro = () => {
     return (
 
         <>
-
+{/* <h1> hello,{props.name}</h1> */}
 
             <section id="intro">
                 <div className="introContent">
