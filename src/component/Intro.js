@@ -16,7 +16,7 @@ const Intro = () => {
                     <p className="introParagh">  Developed proficiency in <strong> Frontend Development</strong> by implementing solutions in <strong>ReactJS, Java,SQL</strong> .
                         <br></br>to enhance user experiences. <br></br> Targeting roles as a <strong> Frontend Development.</strong>  </p>
                 
-                    <a className="contactBtn" href=" mailto:shalu.singh1304@gmail.com"  >contact me</a>
+                    <a className="contactBtn" href=" mailto:shalu.singh1304@gmail.com"  >Hire me </a>
                 </div>
                 <img src={shalu} alt="shalu" className="shalu" />
        
